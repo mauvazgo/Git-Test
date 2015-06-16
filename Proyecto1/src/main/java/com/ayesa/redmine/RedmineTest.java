@@ -8,14 +8,14 @@ import com.taskadapter.redmineapi.bean.User;
 public class RedmineTest {
 	
 	private static String uri = "http://127.0.0.1:81/redmine";
-	private static String apiAccessKey = "9JpGsK2xlcbTJWqo9xTj";
-	private static String projectKey = "taskconnector-test";
-	private static Integer queryId = null; 
-	
-	public static void main (String args) {
+	private static String apiAccessKey = "WpXFreqOrHqIJ0tpzw8J";
+	private static String projectKey = "prueba1";
+	private static Integer queryId = null;
+			
+	public static void main (String[] args) {
 	
 		try {
-	
+			
 			RedmineManager mgr = new RedmineManager(uri, apiAccessKey);
 			List<User> users = (List<User>)mgr.getUsers();
 			for (User user : users) {
@@ -25,5 +25,4 @@ public class RedmineTest {
 			e.printStackTrace();
 		}
 	}
-
 }
