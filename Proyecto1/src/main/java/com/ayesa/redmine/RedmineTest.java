@@ -3,6 +3,7 @@ package com.ayesa.redmine;
 import java.util.List;
 
 import com.taskadapter.redmineapi.RedmineManager;
+import com.taskadapter.redmineapi.RedmineManagerFactory;
 import com.taskadapter.redmineapi.bean.User;
 
 public class RedmineTest {
@@ -16,8 +17,8 @@ public class RedmineTest {
 
 		try {
 
-			RedmineManager mgr = new RedmineManager(uri, apiAccessKey);
-			List<User> users = (List<User>) mgr.getUsers();
+			RedmineManager mgr = RedmineManagerFactory.createWithApiKey(uri, apiAccessKey);
+			List<User> users = (List<User>) mgr.getUserManager().getUsers();
 			for (User user : users) {
 				System.out.println(user.toString());
 			}
