@@ -9,6 +9,8 @@ public class RedmineTest2 {
 
 	private static String uri = "http://127.0.0.1:81/redmine";
 	private static String apiAccessKey = "WpXFreqOrHqIJ0tpzw8J";
+	private static String projectKey = "prueba1";
+	private static Integer queryId = null;
 
 	public static void main(String[] args) {
 
