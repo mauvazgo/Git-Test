@@ -12,6 +12,7 @@ public class RedmineTest2 {
 	private static String apiAccessKey = "WpXFreqOrHqIJ0tpzw8J";
 	private static String projectKey = "prueba1";
 	private static Integer queryId = null;
+	private static Integer queryId2 = null;
 
 	public static void main(String[] args) {
 
