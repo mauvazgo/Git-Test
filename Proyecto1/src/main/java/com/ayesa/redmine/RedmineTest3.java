@@ -6,11 +6,11 @@ import com.taskadapter.redmineapi.RedmineManager;
 import com.taskadapter.redmineapi.RedmineManagerFactory;
 import com.taskadapter.redmineapi.bean.User;
 
-public class RedmineTest {
+public class RedmineTest3 {
 
 	private static String uri = "http://127.0.0.1:81/redmine";
 	private static String apiAccessKey = "WpXFreqOrHqIJ0tpzw8J";
-
+	
 	public static void main(String[] args) {
 
 		try {
