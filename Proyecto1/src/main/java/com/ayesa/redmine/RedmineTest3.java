@@ -1,6 +1,7 @@
 package com.ayesa.redmine;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 import com.taskadapter.redmineapi.RedmineManager;
 import com.taskadapter.redmineapi.RedmineManagerFactory;
@@ -10,8 +11,8 @@ public class RedmineTest3 {
 
 	private static String uri = "http://127.0.0.1:81/redmine";
 	private static String apiAccessKey = "WpXFreqOrHqIJ0tpzw8J";
-	
-	public static void main(String[] args) {
+
+	public static void main(String[] args) throws Exception {
 
 		try {
 
@@ -22,7 +23,9 @@ public class RedmineTest3 {
 				System.out.println(user.toString());
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			Logger.getGlobal().log(null, " msg");
+			throw e;
+
 		}
 	}
 }
